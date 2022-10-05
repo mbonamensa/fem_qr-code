@@ -24,7 +24,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Solution URL: [Maame's QR code solution](https://github.com/mbonamensa/fem_qr-code)
 - Live Site URL: [Frontend Mentor | QR code by Maame](https://mbonamensa.github.io/fem_qr-code)
-- Figma file: [I created my own figma file] (https://www.figma.com/file/iZPmhdkrsSZKRICZgXoHge/Frontend-Mentor---QR-code-design?node-id=0%3A1)
+- Figma file: [I created my own figma file](https://www.figma.com/file/iZPmhdkrsSZKRICZgXoHge/Frontend-Mentor---QR-code-design?node-id=0%3A1)
 
 ## My process
 
@@ -66,5 +66,5 @@ These resources were useful in helping me build this project
 ## Author
 
 - Website - [Maame Yaa Serwaa Bona-Mensa](https://mbonamensa.netlify.app)
-- Frontend Mentor - [@mbonamensa](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@mys_bm](https://www.twitter.com/mys_mb)
+- Frontend Mentor - [@mbonamensa](https://www.frontendmentor.io/profile/mbonamensa)
+- Twitter - [@mys_bm](https://www.twitter.com/mys_bm)
