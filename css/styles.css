@@ -9,6 +9,11 @@ body {
   background-color: #d6e2f0;
   font-family: "Outfit", sans-serif;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f3251;
+  }
+}
 
 img {
   width: 100%;
@@ -20,6 +25,17 @@ main {
   height: 100%;
   min-height: 100vh;
   justify-content: center;
+  flex-direction: column-reverse;
+}
+main .fa-sun {
+  color: #1f3251;
+  cursor: pointer;
+  font-size: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  main .fa-sun {
+    color: #d6e2f0;
+  }
 }
 
 .main-container {
@@ -27,6 +43,12 @@ main {
   padding: 20px;
   width: 85%;
   border-radius: 15px;
+  margin: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  .main-container {
+    background-color: #0E0824;
+  }
 }
 .main-container .img-container {
   width: 100%;
@@ -37,12 +59,17 @@ main {
 .main-container .text-container {
   margin: 30px 0;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .main-container .text-container h1 {
   font-size: 22px;
   color: #1f3251;
   margin-bottom: 15px;
+}
+@media (prefers-color-scheme: dark) {
+  .main-container .text-container h1 {
+    color: #d4dae3;
+  }
 }
 .main-container .text-container p {
   font-size: 15px;
@@ -53,6 +80,12 @@ footer {
   font-size: 11px;
   text-align: center;
   padding: 20px 0;
+  color: #0E0824;
+}
+@media (prefers-color-scheme: dark) {
+  footer {
+    color: #d4dae3;
+  }
 }
 footer a {
   color: #3685ff;
@@ -60,4 +93,42 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+.darkmode {
+  background-color: #1f3251;
+}
+.darkmode .main-container {
+  background-color: #0E0824;
+}
+.darkmode .main-container h1 {
+  color: #d4dae3;
+}
+.darkmode .fa-sun {
+  color: #d6e2f0;
+}
+.darkmode footer {
+  color: #d4dae3;
+}
+
+.lightmode {
+  background-color: #d6e2f0;
+}
+.lightmode .main-container {
+  background-color: #ffffff;
+}
+.lightmode .main-container h1 {
+  color: #1f3251;
+}
+.lightmode .fa-sun {
+  color: #1f3251;
+}
+.lightmode footer {
+  color: #0E0824;
+}
+
+@media (min-width: 375px) {
+  .main-container {
+    width: 320px;
+  }
 }/*# sourceMappingURL=styles.css.map */

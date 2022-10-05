@@ -1,6 +1,7 @@
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+
 // Apply to all
 * {
     margin: 0;
@@ -13,13 +14,28 @@ $white: #ffffff;
 $light-gray: #d6e2f0;
 $grayish-blue: #7b879d;
 $blue: #3685ff;
+$lighter-blue: #d4dae3;
 $dark-blue: #1f3251;
 $darker-blue: #0E0824;
+$darkmode: true;
+
+// Check user settings for theme preference
+@mixin darkmode {
+    @if (darkmode) {
+        @media (prefers-color-scheme: dark) {
+            @content
+        }
+    }    
+}
 
 
 body {
     background-color: $light-gray;
     font-family: "Outfit", sans-serif;
+
+    @include darkmode {
+        background-color: $dark-blue;
+    }
 }
 
 img {
@@ -32,14 +48,31 @@ main {
     height: 100%;
     min-height: 100vh;
     justify-content: center;
+    flex-direction: column-reverse;
+
+    .fa-sun {
+        color: $dark-blue;
+        cursor: pointer;
+        font-size: 20px;
+
+        @include darkmode {
+            color: $light-gray;
+        }
+        
+    }
     
 }
 
 .main-container {
-    background-color: #ffffff;
+    background-color: $white;
     padding: 20px;
     width: 85%;
     border-radius: 15px;
+    margin: 20px;
+
+    @include darkmode {
+        background-color: $darker-blue;
+    }
 
     .img-container {
         width: 100%;
@@ -52,12 +85,16 @@ main {
     .text-container {
         margin: 30px 0;
         text-align: center;
-        padding: 0 20px;
+        padding: 0 10px;
 
         h1 {
             font-size: 22px;
             color: $dark-blue;
             margin-bottom: 15px;
+
+            @include darkmode {
+                color: $lighter-blue;
+            }
         }
 
         p {
@@ -71,7 +108,12 @@ footer {
     font-size: 11px; 
     text-align: center; 
     padding: 20px 0;
+    color: $darker-blue;
     
+    @include darkmode {
+        color: $lighter-blue;
+    }
+
     a { 
         color: $blue;
         text-decoration: none; 
@@ -79,5 +121,53 @@ footer {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+// Darkmode
+.darkmode {
+    background-color: $dark-blue;
+
+    .main-container {
+        background-color: $darker-blue;
+
+        h1 {
+            color: $lighter-blue;
+        }
+    }
+
+    .fa-sun {
+        color: $light-gray;
+    }
+
+    footer {
+        color: $lighter-blue
+    }
+}
+
+// Lightmode
+.lightmode {
+    background-color: $light-gray;
+
+    .main-container {
+        background-color: $white;
+
+        h1 {
+            color: $dark-blue;
+        }
+    }
+
+    .fa-sun {
+        color: $dark-blue;
+    }
+
+    footer {
+        color: $darker-blue;
+    }
+}
+
+@media (min-width: 375px) {
+    .main-container {
+        width: 320px;
     }
 }
