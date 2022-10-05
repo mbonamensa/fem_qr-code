@@ -22,7 +22,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Maame's QR code solution](https://mbonamensa.github.io/fem_qr-code)
+- Solution URL: [Maame's QR code solution](https://github.com/mbonamensa/fem_qr-code)
 - Live Site URL: [Frontend Mentor | QR code by Maame](https://mbonamensa.github.io/fem_qr-code)
 - Figma file: [I created my own figma file] (https://www.figma.com/file/iZPmhdkrsSZKRICZgXoHge/Frontend-Mentor---QR-code-design?node-id=0%3A1)
 
