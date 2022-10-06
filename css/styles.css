@@ -31,14 +31,14 @@ main button {
   background: transparent;
   border: none;
 }
-main button .fa-sun {
-  color: #1f3251;
+main button .icon {
+  fill: #1f3251;
   cursor: pointer;
-  font-size: 20px;
+  width: 20px;
 }
 @media (prefers-color-scheme: dark) {
-  main button .fa-sun {
-    color: #d6e2f0;
+  main button .icon {
+    fill: #d6e2f0;
   }
 }
 
@@ -108,8 +108,8 @@ footer a:hover {
 .darkmode .main-container h1 {
   color: #d4dae3;
 }
-.darkmode .fa-sun {
-  color: #d6e2f0;
+.darkmode .icon {
+  fill: #d6e2f0;
 }
 .darkmode footer {
   color: #d4dae3;
@@ -124,8 +124,8 @@ footer a:hover {
 .lightmode .main-container h1 {
   color: #1f3251;
 }
-.lightmode .fa-sun {
-  color: #1f3251;
+.lightmode .icon {
+  fill: #1f3251;
 }
 .lightmode footer {
   color: #0E0824;
