@@ -48,7 +48,7 @@ Working on this project helped me practice SASS. I have been using regular CSS f
     }    
 }
 ```
-You can find more details on how I used this in my SASS file in this repository. Dark mode wasn't included in the project but I decided to include that as a stretch goal.
+You can find more details on how I used this in my SASS file in this repository. Dark mode wasn't included in the project but I decided to include that as a stretch goal. Also because I LOVE all my apps in dark mode.
 
 ### Continued development
 
