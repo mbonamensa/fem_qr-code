@@ -54,13 +54,23 @@ main {
         background: transparent;
         border: none;
 
-        .fa-sun {
-            color: $dark-blue;
+        // .fa-sun {
+        //     color: $dark-blue;
+        //     cursor: pointer;
+        //     font-size: 20px;
+    
+        //     @include darkmode {
+        //         color: $light-gray;
+        //     }
+            
+        // }
+        .icon {
+            fill: $dark-blue;
             cursor: pointer;
-            font-size: 20px;
+            width: 20px;
     
             @include darkmode {
-                color: $light-gray;
+                fill: $light-gray;
             }
             
         }
@@ -141,8 +151,12 @@ footer {
         }
     }
 
-    .fa-sun {
-        color: $light-gray;
+    // .fa-sun {
+    //     color: $light-gray;
+    // }
+
+    .icon {
+        fill: $light-gray;
     }
 
     footer {
@@ -162,8 +176,12 @@ footer {
         }
     }
 
-    .fa-sun {
-        color: $dark-blue;
+    // .fa-sun {
+    //     color: $dark-blue;
+    // }
+
+    .icon {
+        fill: $dark-blue;
     }
 
     footer {
