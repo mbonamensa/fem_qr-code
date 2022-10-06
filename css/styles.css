@@ -27,13 +27,17 @@ main {
   justify-content: center;
   flex-direction: column-reverse;
 }
-main .fa-sun {
+main button {
+  background: transparent;
+  border: none;
+}
+main button .fa-sun {
   color: #1f3251;
   cursor: pointer;
   font-size: 20px;
 }
 @media (prefers-color-scheme: dark) {
-  main .fa-sun {
+  main button .fa-sun {
     color: #d6e2f0;
   }
 }

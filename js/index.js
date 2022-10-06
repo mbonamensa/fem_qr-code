@@ -1,5 +1,5 @@
 const body = document.body
-const themeIcon = document.querySelector(".fa-sun")
+const themeIcon = document.querySelector("button")
 
 // Toggle theme depending on user preference and with icon
 
