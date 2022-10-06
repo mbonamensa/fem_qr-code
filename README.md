@@ -70,6 +70,8 @@ These resources were useful in helping me build this project
 
 - [A Simple Sass Mixin for Detecting System Dark Mode](https://medium.com/@cooperwfloyd/a-simple-sass-mixin-for-detecting-system-dark-mode-bd8157bca72e) 
 - [How to Watch for System Dark Mode Changes Using JavaScript and CSS](https://www.section.io/engineering-education/watch-for-system-dark-mode-using-js-css/) 
+- [Using aria-label best practices](https://www.aditus.io/aria/aria-label/)
+- [What is aria-label and how should I use it?](https://stackoverflow.com/questions/22039910/what-is-aria-label-and-how-should-i-use-it)
 
 
 ## Author
