@@ -50,15 +50,20 @@ main {
     justify-content: center;
     flex-direction: column-reverse;
 
-    .fa-sun {
-        color: $dark-blue;
-        cursor: pointer;
-        font-size: 20px;
+    button {
+        background: transparent;
+        border: none;
 
-        @include darkmode {
-            color: $light-gray;
+        .fa-sun {
+            color: $dark-blue;
+            cursor: pointer;
+            font-size: 20px;
+    
+            @include darkmode {
+                color: $light-gray;
+            }
+            
         }
-        
     }
     
 }

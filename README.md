@@ -39,6 +39,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 Working on this project helped me practice SASS. I have been using regular CSS for a long time and I decided to give SASS a try because I had seen it so many times. It is a much simpler way of writing CSS and I think I built this project much faster than I would have with regular CSS. The main learning highlight for me in this project was using mixins to check for the user theme preference. See code below.
 
+
 ```css
 @mixin darkmode {
     @if (darkmode) {
@@ -49,6 +50,14 @@ Working on this project helped me practice SASS. I have been using regular CSS f
 }
 ```
 You can find more details on how I used this in my SASS file in this repository. Dark mode wasn't included in the project but I decided to include that as a stretch goal.
+
+***This is an update:*** So after submitting my project, I had errors in my HTML and decided to ask the Frontend Mentor community for help and I learnt about how accessibility isn't all about passing validation tests. I also realised the button I used for toggling the light and dark mode(a Font Awesome icon in an ```<i>``` tag which I added an event listener to) wasn't exacltly accessible so I went with a suggestion someone made which I found really useful - Wrapping a ```<button>``` tag around it and adding an ```aria-label``` attribute that describes what the button does. I used CSS to remove the button style to still maintain the aesthetics of the icon I wanted and added the event listener to the button instead. See code below:
+
+```html
+    <button title="toggle dark or light mode" aria-label="toggle dark or light mode">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+```
 
 ### Continued development
 
